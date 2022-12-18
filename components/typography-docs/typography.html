@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glimpse UI | Typography</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/documentation/documentation.css" />
+    <link rel="stylesheet" href="typography.css" />
+
+    <script
+      src="https://kit.fontawesome.com/3f863ebf82.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Top nav starts -->
+
+    <nav class="top-navbar">
+      <div class="top-nav-brand">
+        <a href="../../index.html">
+          <img src="/images/logo.png" alt="brand-logo" />
+        </a>
+        <a href="../../index.html" class="brand-name">Glimpse</a>
+      </div>
+
+      <ul class="top-nav-items">
+        <li class="inline-list">
+          <a href="https://github.com/kirandebnath81/GlimpseUI" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="inline-list menu-icon-box">
+          <i id="menu-icon" class="fa-bars fa-solid"></i>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Top nav ends -->
+
+    <!-- Main component starts -->
+
+    <main>
+      <!-- Side nav start -->
+      <nav id="menu" class="side-navbar">
+        <ul class="side-nav-items">
+          <li class="title">Get Started</li>
+          <li>
+            <a href="../introduction/introduction.html">Installation</a>
+          </li>
+          <li>
+            <a href="../colors-docs/colors.html">Colors</a>
+          </li>
+          <li>
+            <a href="" class="active">Typography</a>
+          </li>
+          <li class="title">Component</li>
+          <li>
+            <a href="../alert/alert.html">Alert</a>
+          </li>
+          <li>
+            <a href="../avatar/avatar.html">Avatar</a>
+          </li>
+          <li>
+            <a href="../badge/badge.html">Badge</a>
+          </li>
+          <li>
+            <a href="../button/button.html">Button</a>
+          </li>
+          <li>
+            <a href="../card/card.html">Card</a>
+          </li>
+          <li>
+            <a href="../chips/chips.html">Chips</a>
+          </li>
+          <li>
+            <a href="../grid/grid.html">Grid</a>
+          </li>
+          <li>
+            <a href="../imageComponent/imageComponent.html">images</a>
+          </li>
+          <li>
+            <a href="../input/input.html">Input</a>
+          </li>
+          <li>
+            <a href="../lists/lists.html">Lists</a>
+          </li>
+          <li>
+            <a href="../modal/modal.html">Modal</a>
+          </li>
+          <li>
+            <a href="../navigation/navigation.html">Navigation</a>
+          </li>
+          <li>
+            <a href="../rating/rating.html">Rating</a>
+          </li>
+          <li>
+            <a href="../slider/slider.html">Slider</a>
+          </li>
+          <li>
+            <a href="../snackbar/snackbar.html">Snackbar</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Side nav ends -->
+
+      <!--  Body section starts -->
+
+      <section class="component-body">
+        <!-- Header starts -->
+
+        <div class="body-header divider">
+          <h2 class="fw-600">Typography</h2>
+          <p class="body-para">
+            Glimpse UI uses the following styles for typograpy.
+          </p>
+        </div>
+        <!-- Header ends -->
+
+        <!-- Introduction starts  -->
+
+        <section id="default" class="body-section">
+          <h3 class="fw-600">Font Family</h3>
+          <p class="body-para">
+            Montserrat , a free font available at Google Fonts has been used to
+            style Glimpse UI components.
+          </p>
+        </section>
+
+        <!-- Introduction ends  -->
+
+        <!-- Headings start -->
+        <section class="body-section">
+          <h2 class="fw-600 fs-3">Headings</h2>
+          <p class="body-para">
+            There are five different font sizes used for heading.
+          </p>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>HTML Tag</th>
+                <th>Output</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>&lt;h1&gt;Heading 1&lt;&#47;h1&gt;</td>
+                <td><h1>Heading 1</h1></td>
+              </tr>
+
+              <tr>
+                <td>&lt;h2&gt;Heading 2&lt;&#47;h2&gt;</td>
+                <td><h2>Heading 2</h2></td>
+              </tr>
+
+              <tr>
+                <td>&lt;h3&gt;Heading 3&lt;&#47;h3&gt;</td>
+                <td><h3>Heading 3</h3></td>
+              </tr>
+
+              <tr>
+                <td>&lt;h4&gt;Heading 4&lt;&#47;h4&gt;</td>
+                <td><h4>Heading 4</h4></td>
+              </tr>
+
+              <tr>
+                <td>&lt;h5&gt;Heading 5&lt;&#47;h5&gt;</td>
+                <td><h5>Heading 5</h5></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <!-- Headings end -->
+
+        <!--  Font Sizes start -->
+
+        <section class="body-section">
+          <h3 class="fw-600">Font Sizes</h3>
+          <p class="body-para">
+            There are six different font sizes used for text.
+          </p>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ClassName</th>
+                <th>Variable Name</th>
+                <th>Output</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>fs-1</td>
+                <td>--font-size-h1</td>
+                <td class="fs-1">Size: 40px</td>
+              </tr>
+
+              <tr>
+                <td>fs-2</td>
+                <td>--font-size-h2</td>
+                <td class="fs-2">Size: 32px</td>
+              </tr>
+
+              <tr>
+                <td>fs-3</td>
+                <td>--font-size-h3</td>
+                <td class="fs-3">Size: 24px</td>
+              </tr>
+
+              <tr>
+                <td>fs-4</td>
+                <td>--font-size-h4</td>
+                <td class="fs-4">Size: 20px</td>
+              </tr>
+
+              <tr>
+                <td>fs-5</td>
+                <td>--font-size-h5</td>
+                <td class="fs-5">Size: 16px</td>
+              </tr>
+
+              <tr>
+                <td>fs-6</td>
+                <td>--font-size-h6</td>
+                <td class="fs-6">Size: 12px</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!--  Font Sizes ends -->
+
+        <!--  Text Utilities start -->
+
+        <section id="text-utilities" class="body-section">
+          <h3 class="fw-600">Text Utilities</h3>
+          <p class="body-para">Below are some text utility classes.</p>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Class Name</th>
+                <th>Output</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>text-gray</td>
+                <td><p class="text-gray">Gray Text example</p></td>
+              </tr>
+              <tr class="active-row">
+                <td>text-strike</td>
+                <td><p class="text-strike">Strike Through</p></td>
+              </tr>
+
+              <tr>
+                <td>text-align-center</td>
+                <td><p class="text-align-center">Center Aligned text</p></td>
+              </tr>
+
+              <tr>
+                <td>text-align-right</td>
+                <td><p class="text-align-right">Right Aligned text</p></td>
+              </tr>
+
+              <tr>
+                <td>text-align-left</td>
+                <td><p class="text-align-left">Left Aligned text</p></td>
+              </tr>
+
+              <tr>
+                <td>text-highlight</td>
+                <td><p class="text-highlight">Highlighted Text</p></td>
+              </tr>
+
+              <tr>
+                <td>text-thin</td>
+                <td><p class="text-thin">Light Weighted Text</p></td>
+              </tr>
+
+              <tr>
+                <td>&lt;strong&gt;</td>
+                <td><strong>Bold Text</strong></td>
+              </tr>
+
+              <tr>
+                <td>&lt;small&gt;</td>
+                <td><small>Small Text</small></td>
+              </tr>
+
+              <tr>
+                <td>primary-text-color</td>
+                <td>
+                  <p class="primary-text-color">Primary Colored Text</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>secondary-text-color</td>
+                <td>
+                  <p class="secondary-text-color">Secondary Colored Text</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!--  Text Utilities ends -->
+
+        <!-- Link to next component starts -->
+
+        <div class="body-link">
+          <a href="../colors-docs/colors.html" class="link">
+            <i class="fa-solid fa-backward"></i>
+            <span class="mr-xs">Color</span>
+          </a>
+          <a href="../alert/alert.html" class="link">
+            <span class="mr-xs">Alert</span>
+            <i class="fa-sharp fa-solid fa-forward"></i>
+          </a>
+        </div>
+        <!-- Link to next component ends -->
+
+        <!-- Component Footer starts -->
+
+        <footer class="main-footer">
+          <ul class="footer-links">
+            <li>
+              <a href="https://github.com/kirandebnath81" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/kiran-debnath-2299601bb/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/KiranDebnath20" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="copyright text-align-center">
+            <i class="far fa-copyright"></i> 2022 Kiran Debnath. All Rights
+            Reserved
+          </div>
+        </footer>
+        <!-- Component Footer ends -->
+      </section>
+      <!--  Body section ends -->
+    </main>
+
+    <script src="/documentation/documentation.js"></script>
+  </body>
+</html>

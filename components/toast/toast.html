@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glimpse UI | Toast</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/documentation/documentation.css" />
+    <link rel="stylesheet" href="../button/button.css" />
+    <link rel="stylesheet" href="toast.css" />
+    <link rel="stylesheet" href="toast-docs.css" />
+
+    <script
+      src="https://kit.fontawesome.com/3f863ebf82.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Top nav starts -->
+
+    <nav class="top-navbar">
+      <div class="top-nav-brand">
+        <a href="../../index.html">
+          <img src="/images/logo.png" alt="brand-logo" />
+        </a>
+        <a href="../../index.html" class="brand-name">Glimpse</a>
+      </div>
+
+      <ul class="top-nav-items">
+        <li class="inline-list">
+          <a href="https://github.com/kirandebnath81/GlimpseUI" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="inline-list menu-icon-box">
+          <i id="menu-icon" class="fa-bars fa-solid"></i>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Top nav ends -->
+
+    <!-- Main component starts -->
+
+    <main>
+      <!-- Side nav start -->
+      <nav id="menu" class="side-navbar">
+        <ul class="side-nav-items">
+          <li class="title">Get Started</li>
+          <li>
+            <a href="../introduction/introduction.html">Installation</a>
+          </li>
+          <li>
+            <a href="../colors-docs/colors.html">Colors</a>
+          </li>
+          <li>
+            <a href="../typography-docs/typography.html">Typography</a>
+          </li>
+          <li class="title">Component</li>
+          <li>
+            <a href="../alert/alert.html">Alert</a>
+          </li>
+          <li>
+            <a href="../avatar/avatar.html">Avatar</a>
+          </li>
+          <li>
+            <a href="../badge/badge.html">Badge</a>
+          </li>
+          <li>
+            <a href="../button/button.html">Button</a>
+          </li>
+          <li>
+            <a href="../card/card.html">Card</a>
+          </li>
+          <li>
+            <a href="../grid/grid.html">Grid</a>
+          </li>
+          <li>
+            <a href="../imageComponent/imageComponent.html">images</a>
+          </li>
+          <li>
+            <a href="../input/input.html">Input</a>
+          </li>
+          <li>
+            <a href="../lists/lists.html">Lists</a>
+          </li>
+          <li>
+            <a href="../modal/modal.html">Modal</a>
+          </li>
+          <li>
+            <a href="../navigation/navigation.html">Navigation</a>
+          </li>
+          <li>
+            <a href="../rating/rating.html">Rating</a>
+          </li>
+          <li>
+            <a href="../slider/slider.html">Slider</a>
+          </li>
+          <li>
+            <a href="" class="active">Toast</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Side nav ends -->
+
+      <!--  Body section starts -->
+
+      <section class="component-body">
+        <!-- Header starts -->
+
+        <div class="body-header divider">
+          <h2 class="fw-600">Toast</h2>
+          <p class="body-para">
+            Toast or Snackbar is used to show messages, notifications, or some
+            actions that need users attention.
+          </p>
+        </div>
+
+        <!-- Header ends -->
+
+        <!-- Standard toast starts -->
+
+        <div class="body-section">
+          <h3 class="fw-600">Standard Toast</h3>
+          <p class="body-para">
+            Toasts can be easily created using the
+            <span class="text-highlight">"toast"</span> class.
+          </p>
+
+          <!-- Demo toast starts -->
+          <button class="btn btn-primary" id="demo-taost-open">
+            Live Demo
+          </button>
+
+          <div class="toast demo-toast">
+            <div class="toast-content">
+              <i class="fa-solid fa-circle-check mr-s"></i>
+              <span>Added to the Cart</span>
+            </div>
+
+            <i class="fas fa-times toast-close" id="demo-toast-close"></i>
+          </div>
+          <!-- Demo toast ends -->
+
+          <div class="component-container">
+            <div class="toast">
+              <div class="toast-content">
+                <i class="fa-solid fa-circle-check mr-s"></i>
+                <span>Added to the Cart</span>
+              </div>
+
+              <i class="fas fa-times toast-close"></i>
+            </div>
+          </div>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2823%2C24%2C24%2C1%29&t=seti&wt=none&l=htmlmixed&width=511.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=3px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast-content%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-circle-check%2520mr-s%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%253EAdded%2520to%2520the%2520Cart%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520toast-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
+            style="height: 250px"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+
+          <h4 class="m-md-1 m-x-0">Javascript</h4>
+
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2823%2C24%2C24%2C1%29&t=seti&wt=none&l=javascript&width=511.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=3px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=141%25&si=false&es=2x&wm=false&code=const%2520toastOpenBtn%2520%253D%2520document.querySelector%28%2522%2523demo-taost-open%2522%29%253B%250Aconst%2520toastCloseBtn%2520%253D%2520document.querySelector%28%2522%2523demo-toast-close%2522%29%253B%250A%250Aconst%2520demoToast%2520%253D%2520document.querySelector%28%2522.demo-toast%2522%29%253B%250A%250A%252F%252Fhandle%2520toast%250Aconst%2520toastHandler%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520demoToast.classList.toggle%28%2522active%2522%29%253B%250A%257D%253B%250A%250A%252F%252Fshow%2520toast%250AtoastOpenBtn.addEventListener%28%2522click%2522%252C%2520toastHandler%29%253B%250A%250A%252F%252Fclose%2520toast%250AtoastCloseBtn.addEventListener%28%2522click%2522%252C%2520toastHandler%29%253B%250A"
+            style="height: 250px"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <!-- Standard toast ends -->
+
+        <!-- Toast types starts -->
+
+        <div class="body-section">
+          <h3 class="fw-600">Toast Types</h3>
+          <p class="body-para">
+            Create different types of toasts by using
+            <span class="text-highlight"
+              >"success", "danger", "warn" or "info"</span
+            >
+            class along with the
+            <span class="text-highlight">"toast"</span> class.
+          </p>
+          <div class="component-container">
+            <div class="toast success">
+              <div class="toast-content">
+                <i class="fa-solid fa-circle-check mr-s"></i>
+                <span>Success! A success toast.</span>
+              </div>
+
+              <i class="fas fa-times toast-close"></i>
+            </div>
+
+            <div class="toast warn">
+              <div class="toast-content">
+                <i class="fa-solid fa-circle-exclamation mr-s"></i>
+                <span>Warning! A warning toast. </span>
+              </div>
+
+              <i class="fas fa-times toast-close"></i>
+            </div>
+
+            <div class="toast danger">
+              <div class="toast-content">
+                <i class="fa-solid fa-circle-exclamation mr-s"></i>
+                <span>Error ! An error toast</span>
+              </div>
+
+              <i class="fas fa-times toast-close"></i>
+            </div>
+
+            <div class="toast info">
+              <div class="toast-content">
+                <i class="fa-solid fa-circle-info mr-s"></i>
+                <span>A simple info toast</span>
+              </div>
+
+              <i class="fas fa-times toast-close"></i>
+            </div>
+          </div>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2823%2C24%2C24%2C1%29&t=seti&wt=none&l=htmlmixed&width=511.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=3px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2520success%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast-content%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-circle-check%2520mr-s%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%253ESuccess%21%2520A%2520success%2520toast.%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520toast-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522toast%2520warn%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast-content%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-circle-exclamation%2520mr-s%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%253EWarning%21%2520A%2520warning%2520toast.%2520%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520toast-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522toast%2520danger%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast-content%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-circle-exclamation%2520mr-s%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%253EError%2520%21%2520An%2520error%2520toast%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520toast-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522toast%2520info%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast-content%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-circle-info%2520mr-s%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%253EA%2520simple%2520info%2520toast%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520toast-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A"
+            style="height: 250px"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <!-- Toast types ends -->
+
+        <!-- Link to next component starts -->
+
+        <div class="body-link">
+          <a href="../slider/slider.html" class="link">
+            <i class="fa-solid fa-backward"></i>
+            <span class="mr-xs">Slider</span>
+          </a>
+          <div></div>
+        </div>
+        <!-- Link to next component ends -->
+
+        <!-- Component Footer starts -->
+
+        <footer class="main-footer">
+          <ul class="footer-links">
+            <li>
+              <a href="https://github.com/kirandebnath81" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/kiran-debnath-2299601bb/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/KiranDebnath20" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="copyright text-align-center">
+            <i class="far fa-copyright"></i> 2022 Kiran Debnath. All Rights
+            Reserved
+          </div>
+        </footer>
+        <!-- Component Footer ends -->
+      </section>
+      <!--  Body section ends -->
+    </main>
+
+    <script src="toast.js"></script>
+    <script src="/documentation/documentation.js"></script>
+  </body>
+</html>

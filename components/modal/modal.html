@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glimpse UI | Modals</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/documentation/documentation.css" />
+    <link rel="stylesheet" href="../button/button.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="modal-docs.css" />
+
+    <script
+      src="https://kit.fontawesome.com/3f863ebf82.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Top nav starts -->
+
+    <nav class="top-navbar">
+      <div class="top-nav-brand">
+        <a href="../../index.html">
+          <img src="/images/logo.png" alt="brand-logo" />
+        </a>
+        <a href="../../index.html" class="brand-name">Glimpse</a>
+      </div>
+
+      <ul class="top-nav-items">
+        <li class="inline-list">
+          <a href="https://github.com/kirandebnath81/GlimpseUI" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="inline-list menu-icon-box">
+          <i id="menu-icon" class="fa-bars fa-solid"></i>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Top nav ends -->
+
+    <!-- Main component starts -->
+
+    <main>
+      <!-- Side nav start -->
+      <nav id="menu" class="side-navbar">
+        <ul class="side-nav-items">
+          <li class="title">Get Started</li>
+          <li>
+            <a href="../introduction/introduction.html">Installation</a>
+          </li>
+          <li>
+            <a href="../colors-docs/colors.html">Colors</a>
+          </li>
+          <li>
+            <a href="../typography-docs/typography.html">Typography</a>
+          </li>
+          <li class="title">Component</li>
+          <li>
+            <a href="../alert/alert.html">Alert</a>
+          </li>
+          <li>
+            <a href="../avatar/avatar.html">Avatar</a>
+          </li>
+          <li>
+            <a href="../badge/badge.html">Badge</a>
+          </li>
+          <li>
+            <a href="../button/button.html">Button</a>
+          </li>
+          <li>
+            <a href="../card/card.html">Card</a>
+          </li>
+          <li>
+            <a href="../grid/grid.html">Grid</a>
+          </li>
+          <li>
+            <a href="../imageComponent/imageComponent.html">images</a>
+          </li>
+          <li>
+            <a href="../input/input.html">Input</a>
+          </li>
+          <li>
+            <a href="../lists/lists.html">Lists</a>
+          </li>
+          <li>
+            <a href="" class="active">Modal</a>
+          </li>
+          <li>
+            <a href="../navigation/navigation.html">Navigation</a>
+          </li>
+          <li>
+            <a href="../rating/rating.html">Rating</a>
+          </li>
+          <li>
+            <a href="../slider/slider.html">Slider</a>
+          </li>
+          <li>
+            <a href="../toast/toast.html">Toast</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Side nav ends -->
+
+      <!--  Body section starts -->
+
+      <section class="component-body">
+        <!-- Header starts -->
+
+        <div class="body-header divider">
+          <h2 class="fw-600">Modal</h2>
+          <p class="body-para">
+            Modals are like pop-ups which are positioned over everything else in
+            the document. Only way to close it, is to click the close button.
+          </p>
+        </div>
+
+        <!-- Header ends -->
+
+        <div class="body-section">
+          <p class="body-para">
+            Modals can be easily created using
+            <span class="text-highlight">"modal"</span> class
+          </p>
+
+          <p class="body-para">
+            You must wrap the modal inside a
+            <span class="text-highlight">"modal-wrapper"</span> class , which
+            contains the modal and by toggling active class you can toggle the
+            modal.
+          </p>
+
+          <button class="btn btn-primary m-md-2 m-x-0" id="view-modal-btn">
+            Preview Live Demo
+          </button>
+
+          <div class="modal-wrapper">
+            <div class="modal">
+              <h3 class="modal-title">A Modal Title</h3>
+
+              <div class="modal-body">
+                <p class="modal-text">
+                  Are you sure you want to delete all the videos of the
+                  playlist.This will permanatly delete your videos.
+                </p>
+              </div>
+
+              <div class="modal-btns">
+                <button class="btn btn-secondary mr-s" id="cancel-modal-btn">
+                  Cancel
+                </button>
+                <button class="btn btn-danger">Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2823%2C24%2C24%2C1%29&t=seti&wt=none&l=htmlmixed&width=511.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=3px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=141%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522modal-wrapper%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522modal-title%2522%253EA%2520Modal%2520Title%253C%252Fh3%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522modal-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Are%2520you%2520sure%2520you%2520want%2520to%2520delete%2520all%2520the%2520videos%2520of%2520the%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520playlist.This%2520will%2520permanatly%2520delete%2520your%2520videos.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-btns%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520mr-s%2522%2520id%253D%2522cancel-modal-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Cancel%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-danger%2522%253EDelete%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+            style="height: 250px"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+
+          <h4 class="m-md-2 m-x-0">Javascript</h4>
+
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2823%2C24%2C24%2C1%29&t=seti&wt=none&l=javascript&width=511.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=3px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=141%25&si=false&es=2x&wm=false&code=const%2520viewModalBtn%2520%253D%2520document.querySelector%28%2522%2523view-modal-btn%2522%29%253B%250Aconst%2520cancelModalBtn%2520%253D%2520document.querySelector%28%2522%2523cancel-modal-btn%2522%29%253B%250A%250Aconst%2520modalWrapper%2520%253D%2520document.querySelector%28%2522.modal-wrapper%2522%29%253B%250A%250A%252F%252Fhandle%2520modal%250Aconst%2520modalHandler%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520modalWrapper.classList.toggle%28%2522active%2522%29%253B%250A%257D%253B%250A%250A%252F%252Fview%2520modal%250AviewModalBtn.addEventListener%28%2522click%2522%252C%2520modalHandler%29%253B%250A%250A%252F%252Fcancel%2520modal%250AcancelModalBtn.addEventListener%28%2522click%2522%252C%2520modalHandler%29%253B%250A%250A"
+            style="height: 250px"
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <!-- Modal starts -->
+
+        <!-- Modal ends -->
+
+        <!-- Link to next component starts -->
+
+        <div class="body-link">
+          <a href="../lists/lists.html" class="link">
+            <i class="fa-solid fa-backward"></i>
+            <span class="mr-xs">Lists</span>
+          </a>
+          <a href="../navigation/navigation.html" class="link">
+            <span class="mr-xs">Navigation</span>
+            <i class="fa-sharp fa-solid fa-forward"></i>
+          </a>
+        </div>
+        <!-- Link to next component ends -->
+
+        <!-- Component Footer starts -->
+
+        <footer class="main-footer">
+          <ul class="footer-links">
+            <li>
+              <a href="https://github.com/kirandebnath81" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/kiran-debnath-2299601bb/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/KiranDebnath20" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="copyright text-align-center">
+            <i class="far fa-copyright"></i> 2022 Kiran Debnath. All Rights
+            Reserved
+          </div>
+        </footer>
+        <!-- Component Footer ends -->
+      </section>
+      <!--  Body section ends -->
+    </main>
+
+    <script src="modal.js"></script>
+    <script src="/documentation/documentation.js"></script>
+  </body>
+</html>

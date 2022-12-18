@@ -1,0 +1,56 @@
+/* main alert */
+.alert {
+  width: clamp(250px, 100%, 600px);
+  padding: 1.3rem;
+  display: flex;
+  border-radius: var(--sm-radius);
+  font-size: 1.7rem;
+  box-shadow: 0px 2px 3px var(--lightgray-color);
+  position: relative;
+}
+
+.alert i {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+.alert span {
+  font-weight: 500;
+}
+
+/* alert types */
+.alert-success {
+  background-color: var(--light-green);
+}
+.alert-success i {
+  color: var(--dark-green);
+}
+
+.alert-error {
+  background-color: var(--light-red);
+}
+
+.alert-error i {
+  color: var(--dark-red);
+}
+
+.alert-warning {
+  background-color: var(--light-orange);
+}
+.alert-warning i {
+  color: var(--dark-orange);
+}
+
+.alert-info {
+  background-color: var(--light-blue);
+}
+.alert-info i {
+  color: var(--dark-blue);
+}
+
+/* dismissable icon */
+.alert .alert-dismissible-icon {
+  color: var(--dark-color);
+  position: absolute;
+  right: 0.5rem;
+  cursor: pointer;
+}

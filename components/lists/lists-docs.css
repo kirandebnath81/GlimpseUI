@@ -1,0 +1,6 @@
+.component-container {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}

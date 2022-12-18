@@ -1,0 +1,28 @@
+/* Responsive image */
+
+.img-responsive img {
+  width: 100%;
+}
+
+/* Square image */
+
+.img-square {
+  width: 20rem;
+}
+
+.img-square img {
+  width: 100%;
+  border-radius: var(--sm-radius);
+}
+
+/* Round Image */
+
+.img-round {
+  width: 20rem;
+  height: 20rem;
+}
+
+.img-round img {
+  width: 100%;
+  border-radius: var(--round-radius);
+}

@@ -1,0 +1,88 @@
+.color {
+  flex-basis: 32%;
+  min-width: 180px;
+  display: flex;
+}
+.color .color-box {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--sm-radius);
+  margin-right: 1.2rem;
+  box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.color .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.color .color-name {
+  font-weight: 500;
+  font-size: 1.6rem;
+  white-space: nowrap;
+}
+
+.color .color-hex {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* default colors */
+.color .primary {
+  background-color: var(--primary-color);
+}
+
+.color .gray {
+  background-color: var(--gray-color);
+}
+.color .dark {
+  background-color: var(--dark-color);
+}
+.color .white {
+  background-color: var(--white-color);
+}
+.color .lynx-white {
+  background-color: var(--lynx-white);
+}
+
+/* other colors */
+.color .red {
+  background-color: var(--red-color);
+}
+.color .light-red {
+  background-color: var(--light-red);
+}
+.color .dark-red {
+  background-color: var(--dark-red);
+}
+
+.color .blue {
+  background-color: var(--blue-color);
+}
+.color .light-blue {
+  background-color: var(--light-blue);
+}
+.color .dark-blue {
+  background-color: var(--dark-blue);
+}
+
+.color .green {
+  background-color: var(--green-color);
+}
+.color .light-green {
+  background-color: var(--light-green);
+}
+.color .dark-green {
+  background-color: var(--dark-green);
+}
+
+.color .orange {
+  background-color: var(--orange-color);
+}
+.color .light-orange {
+  background-color: var(--light-orange);
+}
+.color .dark-orange {
+  background-color: var(--dark-orange);
+}

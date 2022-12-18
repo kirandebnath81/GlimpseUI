@@ -1,0 +1,24 @@
+.slider-container {
+  width: 100%;
+}
+
+.slider-container .slider-endpoints {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.slider-container .slider {
+  width: 100%;
+  margin: 0.6rem 0 1.2rem;
+}
+
+.slider-container .value {
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.slider-container #slider-value {
+  font-weight: 600;
+}

@@ -1,0 +1,24 @@
+/* Ordered lists */
+
+.list {
+  font-weight: 500;
+}
+
+.list-alpha {
+  list-style-type: lower-alpha;
+}
+.list-roman {
+  list-style-type: lower-roman;
+}
+
+/* Unordered lists */
+
+.list-circle {
+  list-style-type: circle;
+}
+.list-square {
+  list-style-type: square;
+}
+.list-none {
+  list-style-type: none;
+}

@@ -1,0 +1,5 @@
+.component-container {
+  padding: 3rem 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+}

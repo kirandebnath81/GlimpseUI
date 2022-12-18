@@ -1,0 +1,54 @@
+/* circular avatar */
+.circle-avatar {
+  border-radius: 50%;
+  border: 2px solid var(--lynx-white);
+}
+
+.circle-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* semi-circular avatar */
+
+.semi-square-avatar {
+  border-radius: var(--md-radius);
+  border: 2px solid var(--lynx-white);
+}
+
+.semi-square-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--md-radius);
+}
+
+/* text avatar  */
+.text-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: bold;
+  border: 2px solid var(--lynx-white);
+  border-radius: var(--round-radius);
+  color: white;
+  background-color: var(--blue-color);
+}
+
+/* different avatar sizes  */
+.avatar-lg {
+  width: 10rem;
+  height: 10rem;
+}
+.avatar-md {
+  width: 8rem;
+  height: 8rem;
+}
+.avatar-sm {
+  width: 6rem;
+  height: 6rem;
+}
+.avatar-xl {
+  width: 4.5rem;
+  height: 4.5rem;
+}

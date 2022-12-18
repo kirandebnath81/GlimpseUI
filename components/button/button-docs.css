@@ -1,0 +1,5 @@
+.component-container {
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}

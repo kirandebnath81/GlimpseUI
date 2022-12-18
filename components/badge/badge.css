@@ -1,0 +1,45 @@
+/* avata-badge */
+
+.badge-container {
+  position: relative;
+}
+
+.badge-container .avatar-badge {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: var(--round-radius);
+  position: absolute;
+  bottom: 7px;
+  right: 10px;
+  border: 2px solid var(--lynx-white);
+}
+
+/* avatar-badge status */
+.badge-container .online {
+  background-color: var(--green-color);
+}
+
+.badge-container .offline {
+  background-color: var(--gray-color);
+}
+.badge-container .dnd {
+  background-color: var(--red-color);
+}
+
+/* icons badge */
+
+.icon-container i {
+  font-size: 2.8rem;
+}
+
+.icon-container .icon-badge {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  background-color: var(--dark-blue);
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--round-radius);
+}

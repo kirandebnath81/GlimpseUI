@@ -1,0 +1,140 @@
+/* Standard card */
+
+.card {
+  width: 28rem;
+  border-radius: var(--sm-radius);
+  box-shadow: 0px 0px 5px var(--lightgray-color);
+  transition: 300ms box-shadow ease-in-out;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 15px var(--lightgray-color);
+}
+
+.card-image {
+  border-bottom: 1px solid var(--lightgray-color);
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: var(--sm-radius);
+}
+
+.card .card-body {
+  padding: 1.6rem 1.4rem;
+}
+
+.card-text .title {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.card-text .subtitle {
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.card .card-btns {
+  margin-top: 2rem;
+}
+
+/* E-commerce card */
+
+.card-ecom .card-like {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: var(--font-size-h4);
+  color: var(--gray-color);
+  cursor: pointer;
+}
+.card-ecom .card-like:hover {
+  color: var(--red-color);
+}
+
+.card-ecom .btn {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.card-ecom .rating {
+  margin: 1rem 0;
+  color: var(--orange-color);
+  font-size: 1.4rem;
+}
+
+.card-body .ecom-amount {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+/* Horizontal card */
+
+.card-horizontal {
+  width: 100%;
+  display: flex;
+}
+
+.card-horizontal .card-image {
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  border-bottom: none;
+  border: none;
+  min-width: 140px;
+}
+
+.card-body .ecom-qty {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.ecom-qty .qty-btn {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  font-weight: 500;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: 200ms background-color ease-in;
+}
+
+.ecom-qty .inc:active {
+  background-color: var(--green-color);
+}
+.ecom-qty .dec:active {
+  background-color: var(--red-color);
+}
+
+.ecom-qty .qty-num {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border: 1px solid #000;
+  border-right: none;
+  border-left: none;
+}
+
+/* Card with overlay */
+
+.disabled .card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-weight: 600;
+  font-size: var(--font-size-h3);
+  border-radius: var(--sm-radius);
+}

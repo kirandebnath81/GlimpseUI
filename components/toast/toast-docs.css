@@ -1,0 +1,5 @@
+.component-container {
+  padding: 3rem 2rem;
+  flex-direction: column;
+  row-gap: 3rem;
+}

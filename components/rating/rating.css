@@ -1,0 +1,33 @@
+.rating {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.rating i {
+  color: var(--lightgray-color);
+}
+
+/* different ratings */
+
+.rating.select-1 i:nth-child(-n + 1) {
+  color: var(--orange-color);
+}
+.rating.select-2 i:nth-child(-n + 2) {
+  color: var(--orange-color);
+}
+.rating.select-3 i:nth-child(-n + 3) {
+  color: var(--orange-color);
+}
+.rating.select-4 i:nth-child(-n + 4) {
+  color: var(--orange-color);
+}
+.rating.select-5 i:nth-child(-n + 5) {
+  color: var(--orange-color);
+}
+
+/* rating info */
+
+.rating .rating-info {
+  color: var(--orange-color);
+  margin-left: 1rem;
+}

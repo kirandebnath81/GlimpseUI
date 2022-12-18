@@ -1,0 +1,24 @@
+.grid {
+  width: 100%;
+  display: grid;
+  column-gap: 2rem;
+  grid-template-rows: 120px;
+}
+
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid .grid-item1 {
+  background-color: var(--lightgray-color);
+}
+.grid .grid-item2 {
+  background-color: var(--gray-color);
+}
+.grid .grid-item3 {
+  background-color: var(--dark-color);
+}
